@@ -46,6 +46,20 @@
 # f.close()
 #
 #
+#
+# # .map method for accessing external
+# key value for determining password.
+#     finding valid passwords in string
+# from itertools import product
+# from string import ascii_lowercase
+# keywords = [''.join(i) for i in product(ascii_lowercase, repeat = 3)]
+# print(keywords)
+#
+# from itertools import product
+# from string import ascii_lowercase
+# keywords = map(''.join, product(ascii_lowercase, repeat=3))
+# print(keywords)
+
 
 # contexts:
 # this opens the documentation and then closes automatically with new indent. You can also create new contexts
@@ -154,15 +168,46 @@
 #     return newString
 #
 # print(revString('String'))
-
-for i in range(1, 101):
-    if i % 15 == 0:
-        print('fizzbuzz')
-    if i % 5 == 0:
-        print('fizz')
-    elif i % 3 == 0:
-        print('buzz')
-    else:
-        print(i)
+#
+# for i in range(1, 101):
+#     if i % 7 == 0:
+#         print('wolf')
+#     elif i % 5 == 0:
+#         print('fizz')
+#     elif i % 3 == 0:
+#         print('buzz')
+#     else:
+#         print(i)
+#
+# name = "John"
+# age = 23
+# if name == "John" and age == 23:
+#     print("Your name is John, and you are also 23 years old.")
+#
+# if name == "John" or name == "Rick":
+#     print("Your name is either John or Rick.")
+#
+#
+# class A:
+#     def __init__(self):
+#         print("A.__init__")
+#
+#
+# class B(A):
+#     def __init__(self):
+#         print("B.__init__")
+#         super().__init__()
+#
+#
+# class C(A):
+#     def __init__(self):
+#         print("C.__init__")
+#         super().__init__()
+#
+#
+# class D(B, C):
+#     def __init__(self):
+#         print("D.__init__")
+#         super().__init__()
 
 
