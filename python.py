@@ -26,11 +26,11 @@
 
 # length of city
 
-strList = ('Alb', 'santa fe', 'mississippi')
+# strList = ('Alb', 'santa fe', 'mississippi')
 
-for string in strList:
-    if len(string) == 11:
-        print(string)
+# for string in strList:
+#     if len(string) == 11:
+#         print(string)
     # elif len(string) ==3:
     #     print('this is alb')
     # else:
@@ -154,3 +154,15 @@ for string in strList:
 #     return newString
 #
 # print(revString('String'))
+
+for i in range(1, 101):
+    if i % 15 == 0:
+        print('fizzbuzz')
+    if i % 5 == 0:
+        print('fizz')
+    elif i % 3 == 0:
+        print('buzz')
+    else:
+        print(i)
+
+
