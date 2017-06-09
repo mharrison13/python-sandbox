@@ -52,26 +52,29 @@
 #     x.tick()
 #     print("to ", x)
 
-class A:
-    def m(self):
-        print("m of A called")
-
-
-class B(A):
-    def m(self):
-        print("m of B called")
-        super().m()
-
-
-class C(A):
-    def m(self):
-        print("m of C called")
-        super().m()
-
-
-class D(B, C):
-    def m(self):
-        print("m of D called")
-        super().m()
+#
+# Diamond Problem:
+#
+# class A:
+#     def m(self):
+#         print("m of A called")
+#
+#
+# class B(A):
+#     def m(self):
+#         print("m of B called")
+#         super().m()
+#
+#
+# class C(A):
+#     def m(self):
+#         print("m of C called")
+#         super().m()
+#
+#
+# class D(B, C):
+#     def m(self):
+#         print("m of D called")
+#         super().m()
 
 # in python, use a super function to solve the problem. the super function uses MRO or method resolution order to pull from each class
